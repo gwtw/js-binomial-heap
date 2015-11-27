@@ -158,6 +158,7 @@ BinomialHeap.prototype.union = function (heap) {
 /**
  * Compares two nodes with each other.
  *
+ * @private
  * @param {Object} a The first key to compare.
  * @param {Object} b The second key to compare.
  * @return {number} -1, 0 or 1 if a < b, a == b or a > b respectively.
@@ -175,6 +176,7 @@ BinomialHeap.prototype.compare = function (a, b) {
 /**
  * Merges two heaps together.
  *
+ * @private
  * @param {Node} a The head of the first heap to merge.
  * @param {Node} b The head of the second heap to merge.
  * @return {Node} The head of the merged heap.
@@ -221,6 +223,7 @@ function mergeHeaps(a, b) {
 /**
  * Link two binomial trees of the same order.
  *
+ * @private
  * @param {Node} minNodeTree The head of the first tree to link.
  * @param {Node} other The head of the second tree to link.
  */
@@ -234,6 +237,7 @@ function linkTrees(minNodeTree, other) {
 /**
  * Link two binomial trees of the same order.
  *
+ * @private
  * @param {Node} minNodeTree The head of the first tree to link.
  * @param {Node} other The head of the second tree to link.
  */
