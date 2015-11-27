@@ -1,6 +1,6 @@
 {
   "name": "@tyriar/binomial-heap",
-  "version": "1.0.5",
+  "version": "1.0.0",
   "description": "An implementation of the binomial heap data structure",
   "scripts": {
     "doc": "documentation-readme -s \"API\"",
