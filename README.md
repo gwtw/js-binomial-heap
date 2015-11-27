@@ -8,15 +8,63 @@ A JavaScript implementation of the [binomial heap](http://www.growingwiththeweb.
 
 ## Features
 
-TODO
+- 100% test coverage
+- Supports all common heap operations\*
+- Store keys with optional associated values
+- Optional custom compare function that can utilize both key and value to give full control over the order of the data
+
+\* except [delete](https://github.com/Tyriar/js-binomial-heap/issues/5) and [decrease key](https://github.com/Tyriar/js-binomial-heap/issues/6)
 
 ## Install
 
-TODO
+```bash
+npm install --save @tyriar/binomial-heap
+```
 
 ## Usage
 
-TODO
+```javascript
+// Import npm module
+var BinomialHeap = require('@tyriar/binomial-heap';
+
+// Construct BinomialHeap
+var heap = new BinomialHeap();
+// Insert keys only
+heap.insert(3);
+heap.insert(7);
+// Insert keys and values
+heap.insert(8, {foo: 'bar'});
+heap.insert(1, {foo: 'baz'});
+
+// Extract all nodes in order
+while (!heap.isEmpty()) {
+  var node = heap.extractMinimum();
+  console.log('key: ' + node.key + ', value: ' + node.value);
+}
+// > key: 1, value: [object Object]
+// > key: 3, value: undefined
+// > key: 7, value: undefined
+// > key: 8, value: [object Object]
+
+// Construct custom compare BinomialHeap
+heap = new BinomialHeap(function (a, b) {
+  return (a.key + a.value).localeCompare(b.key + b.value);
+});
+heap.insert('2', 'B');
+heap.insert('1', 'a');
+heap.insert('1', 'A');
+heap.insert('2', 'b');
+
+// Extract all nodes in order
+while (!heap.isEmpty()) {
+  var node = heap.extractMinimum();
+  console.log('key: ' + node.key + ', value: ' + node.value);
+}
+// > key: 1, value: a
+// > key: 1, value: A
+// > key: 2, value: b
+// > key: 2, value: B
+```
 
 ## Operation time complexity
 
