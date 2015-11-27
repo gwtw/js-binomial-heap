@@ -271,7 +271,7 @@ function removeTreeRoot(heap, root, prev) {
 function Node(key, value) {
   this.key = key;
   this.value = value;
-  this.degree = undefined;
+  this.degree = 0;
   this.parent = undefined;
   this.child = undefined;
   this.sibling = undefined;
