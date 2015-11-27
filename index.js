@@ -112,7 +112,7 @@ BinomialHeap.prototype.size = function () {
 /**
  * Joins another heap to this one.
  *
- * @param {Node} otherHeap The other heap.
+ * @param {BinomialHeap} otherHeap The other heap.
  */
 BinomialHeap.prototype.union = function (heap) {
   this.nodeCount += heap.nodeCount;
