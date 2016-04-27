@@ -135,7 +135,7 @@ Joins another heap to this one.
 **Parameters**
 
 -   `otherHeap` **BinomialHeap** The other heap.
--   `heap`  
+-   `heap`
 
 ### Node
 
