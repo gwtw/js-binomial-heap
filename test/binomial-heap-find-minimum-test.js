@@ -1,7 +1,7 @@
-import Heap from '../';
 import test from 'ava';
+import Heap from '../';
 
-test('should find minimum when it\'s not the head of the tree', function (t) {
+test.cb('should find minimum when it\'s not the head of the tree', function (t) {
   // Construct this binomial heap:
   //
   //   2
