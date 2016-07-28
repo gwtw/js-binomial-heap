@@ -1,6 +1,7 @@
-# js-binomial-heap  [![NPM version](https://img.shields.io/npm/v/@tyriar/binomial-heap.svg?style=flat)](https://www.npmjs.org/package/@tyriar/binomial-heap)
+# js-binomial-heap
 
-[![Build Status](http://img.shields.io/travis/gwtw/js-binomial-heap.svg?style=flat)](http://travis-ci.org/gwtw/js-binomial-heap) [![Coverage Status](https://img.shields.io/coveralls/gwtw/js-binomial-heap.svg?branch=master&service=github)](https://coveralls.io/github/gwtw/js-binomial-heap?branch=master)
+[![Build Status](https://travis-ci.org/gwtw/js-binomial-heap.svg?branch=master)](http://travis-ci.org/gwtw/js-binomial-heap)
+[![Coverage Status](https://coveralls.io/repos/github/gwtw/js-binomial-heap/badge.svg?branch=master)](https://coveralls.io/github/gwtw/js-binomial-heap?branch=master)
 
 A JavaScript implementation of the [binomial heap](http://www.growingwiththeweb.com/2014/01/binomial-heap.html) data structure.
 
