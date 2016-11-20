@@ -3,9 +3,9 @@
 [![Build Status](https://travis-ci.org/gwtw/js-binomial-heap.svg?branch=master)](http://travis-ci.org/gwtw/js-binomial-heap)
 [![Coverage Status](https://coveralls.io/repos/github/gwtw/js-binomial-heap/badge.svg?branch=master)](https://coveralls.io/github/gwtw/js-binomial-heap?branch=master)
 
-A JavaScript implementation of the [binomial heap](http://www.growingwiththeweb.com/2014/01/binomial-heap.html) data structure.
+A JavaScript implementation of the [binomial heap](http://www.growingwiththeweb.com/data-structures/binomial-heap/overview/) data structure.
 
-![](http://www.growingwiththeweb.com/images/2014/01/19/binomial-heap.svg)
+![](http://www.growingwiththeweb.com/images/data-structures/binomial-heap/binomial-heap.svg)
 
 ## Features
 
